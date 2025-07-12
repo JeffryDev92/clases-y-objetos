@@ -5,18 +5,37 @@ public class SistemaFrenos {
     private boolean abs;
     private String estado;
 
-    public SistemaFrenos(String tipo, int discos, boolean abs, String estado) {
-        this.tipo = tipo;
-        this.discos = discos;
-        this.abs = abs;
-        this.estado = estado;
+    public SistemaFrenos() {}
+
+    public String getTipo() {
+        return tipo;
     }
 
-    public void displayInfo() {
-        System.out.println("Información del sistema de frenos:");
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Discos: " + discos);
-        System.out.println("ABS: " + (abs ? "Sí" : "No"));
-        System.out.println("Estado: " + estado);
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getDiscos() {
+        return discos;
+    }
+
+    public void setDiscos(int discos) {
+        this.discos = discos;
+    }
+
+    public boolean isAbs() {
+        return abs;
+    }
+
+    public void setAbs(boolean abs) {
+        this.abs = abs;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

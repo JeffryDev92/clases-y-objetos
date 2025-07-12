@@ -4,16 +4,29 @@ public class Mantenimiento {
     private String tipo;
     private String observaciones;
 
-    public Mantenimiento(String fecha, String tipo, String observaciones) {
-        this.fecha = fecha;
-        this.tipo = tipo;
-        this.observaciones = observaciones;
+    public Mantenimiento() {}
+
+    public String getFecha() {
+        return fecha;
     }
 
-    public void displayInfo() {
-        System.out.println("Información de mantenimiento:");
-        System.out.println("Fecha: " + fecha);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Observaciones: " + observaciones);
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
     }
 }

@@ -4,16 +4,29 @@ public class Neumatico {
     private String tamaño;
     private double presion;
 
-    public Neumatico(String marca, String tamaño, double presion) {
-        this.marca = marca;
-        this.tamaño = tamaño;
-        this.presion = presion;
+    public Neumatico() {}
+
+    public String getMarca() {
+        return marca;
     }
 
-    public void displayInfo() {
-        System.out.println("Información del neumático:");
-        System.out.println("Marca: " + marca);
-        System.out.println("Tamaño: " + tamaño);
-        System.out.println("Presión: " + presion + " psi");
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    public double getPresion() {
+        return presion;
+    }
+
+    public void setPresion(double presion) {
+        this.presion = presion;
     }
 }

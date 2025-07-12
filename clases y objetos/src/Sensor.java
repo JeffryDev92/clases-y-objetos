@@ -4,16 +4,29 @@ public class Sensor {
     private String ubicacion;
     private String estado;
 
-    public Sensor(String tipo, String ubicacion, String estado) {
-        this.tipo = tipo;
-        this.ubicacion = ubicacion;
-        this.estado = estado;
+    public Sensor() {}
+
+    public String getTipo() {
+        return tipo;
     }
 
-    public void displayInfo() {
-        System.out.println("Información del sensor:");
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Ubicación: " + ubicacion);
-        System.out.println("Estado: " + estado);
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

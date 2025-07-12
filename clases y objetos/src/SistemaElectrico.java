@@ -4,16 +4,29 @@ public class SistemaElectrico {
     private String luces;
     private String sensores;
 
-    public SistemaElectrico(String bateria, String luces, String sensores) {
-        this.bateria = bateria;
-        this.luces = luces;
-        this.sensores = sensores;
+    public SistemaElectrico() {}
+
+    public String getBateria() {
+        return bateria;
     }
 
-    public void displayInfo() {
-        System.out.println("Información del sistema eléctrico:");
-        System.out.println("Batería: " + bateria);
-        System.out.println("Luces: " + luces);
-        System.out.println("Sensores: " + sensores);
+    public void setBateria(String bateria) {
+        this.bateria = bateria;
+    }
+
+    public String getLuces() {
+        return luces;
+    }
+
+    public void setLuces(String luces) {
+        this.luces = luces;
+    }
+
+    public String getSensores() {
+        return sensores;
+    }
+
+    public void setSensores(String sensores) {
+        this.sensores = sensores;
     }
 }
